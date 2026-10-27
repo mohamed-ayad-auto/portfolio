@@ -1,0 +1,139 @@
+/* الجزء الخاص بالخط */
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri'); 
+body{
+    display: flex;
+    flex-wrap:wrap ;
+    margin: 0;
+    font-family: 'El Messiri', sans-serif;
+    
+}
+section{
+    width: 100%
+}
+/* الجزء الخاص بالقائمة الجزء العلوي و اللون الخلفية */
+#header{
+    background:#353637;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #32a0c2;
+    padding: 0px 50px;
+}
+#branding h1{
+    font-size: 28Px;
+}
+/* الجزء الخاص بالقائمة */
+nav > ul{
+    margin-top: 0px;
+    list-style-type: none;
+}
+#header a 
+{ 
+    /* الجزء الخاص بالقائمة و لون الخط */
+    color:#ffffff;
+    text-decoration: none;
+}
+/* الجزء الخاص بالقائمة */
+nav >  ul > li{
+    float: right;
+    margin-left: 15px;
+}
+/* الجزء الخاص بالقائمة */
+#header .highlight, #header .current a{
+    color: #32a0c2;
+}
+/* الجزء الخاص بالصورة */
+#showcase
+{
+    min-height:400px ;
+    background:url(../img/image.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+}
+/* الجزء الخاص بالعنوان */
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+#showcase p{
+    font-size: 20px;
+}
+/* الجزء الخاص بالنشرة البريدية */
+#newsletter {
+    padding: 15px 50px;
+    color: #ffffff;
+    background: #353637;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+/* الجزء الخاص بالبريد */
+.newsletterForm {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+/* الجزء الخاص بالبريد */
+.newsletterForm input[type="email"] {
+    padding: 0 10px;
+    height: 38px;        
+    width: 250px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+/* الجزء الخاص بالبريد و الاشتراك  */
+#newsletter button {
+    height: 38px;
+    background-color: #32a0c2; 
+    padding: 0 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#boxes
+/* الجزء الخاص  بالايقونات  */
+{
+    margin-top: 20px;
+    padding: 60px 120px;
+    display: flex;
+    flex-flow: row wrap;
+   
+}
+.box
+{
+    text-align: center;
+    margin-left: 30px;   
+}
+/* footer الجزء الي تحت و خاصه بالسنه  */
+footer{
+    width: 100%;
+    padding: 20px;
+    background-color:#32a0c2;
+    color: #ffffff;
+    text-align: center;
+}
+
+@media (max-width: 579px) {
+    #header{
+        justify-content: center;
+    }
+/* عشان  حجم الجهاز لاب او فون ااو تبلت */
+}
+@media (max-width: 669px) {
+    #newsletter{
+        justify-content: center;
+    }
+}
+@media (max-width: 1154px) {
+    #boxes{
+        flex-direction: column;
+        
+    }    
+}

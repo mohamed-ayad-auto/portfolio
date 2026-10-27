@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slider.css">
+</head>
+<body>
+    <section id="header">
+        <div id="branding">
+            <h1>
+            <a href="index.html"><i class="fa-solid fa-circle-user">
+
+            </i> صفحة <span class="highlight">اسم الطالب</span>
+            </a>
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="current"><a href="index.html">الرئيسية</a></li>
+                <li><a href="gallery.html">معرض الاعمال</a></li>
+            </ul>
+        </nav>      
+    </section>
+    <section id="slider">
+        <div id="wrapper">
+            <div class="content">
+                <img src="img/1.PNG">
+            </div>
+            <div class="content">
+                <img src="img/2.PNG">
+            </div>    
+            <div class="content">
+                <img src="img/3.PNG">
+            </div>
+            <div class="content">
+                <img src="img/4.PNG">
+            </div> 
+        </div>   
+         
+        <div id="navLinks">                 
+                <ul>
+                    <li class="itemLinks" data-pos="0"></li>
+                    <li class="itemLinks" data-pos="1"></li>
+                    <li class="itemLinks" data-pos="2"></li>
+                    <li class="itemLinks" data-pos="3"></li>
+                </ul>   
+        </div>     
+
+    </section>
+    <section id="descriptionContainer">
+        <div class="description" data-pos="0">
+            <div class="titel">
+                <span class="icon"><i class="fa-brands fa-web-awesome"></i></span>معرض الصور التجريبي
+            <div class="tech">HTML, CSS, JS</div>
+            <div class="desc">هذا المشروع من معرض صور بسيط يسمح بعرض صور متعدده مع تحريك سنس و سلايدرء مع وصف لكل صوره يظهر حين التنقل بين الصور</div>
+
+            </div>
+            </div>
+
+        </div>    
+        <div class="description" data-pos="1">
+            <div class="titel">
+                <span class="icon"><i class="fa-brands fa-web-awesome"></i></span>مداونة شخصية
+            <div class="tech">React JS , CSS</div></div>
+            <div class="desc">مشروع مدونة تفاعلية تسمح للمستخدمين بانشاء منشورات و اضافة تعليقات وتنظيم المحتوى بطريقة ديناميكية و سهلة الادارة</div>
+
+            </div>
+            </div>
+        </div>
+         <div class="description" data-pos="2">
+            <div class="titel">
+                <span class="icon"><i class="fa-brands fa-web-awesome"></i></span>لوحة تصميم تفاعلية
+            <div class="tech">Vue, Tailwind CSS, Canvas API</div>
+            <div class="desc">تطبيق ويب يسمح للمستخدم برسم تصاميمه الخاصه باستخدام ادوات تفاعلية متعددة مع امكانية حفظ الاعمال و مشاركتها بسهولة</div>
+
+            </div>
+            </div>
+        </div>
+        <div class="description" data-pos="3">
+            <div class="titel">
+                <span class="icon"><i class="fa-brands fa-web-awesome"></i></span>تطبيق قاىَمة مهام
+            <div class="tech">React Native, Firebase</div>
+            <div class="desc">تطبيق موبايل لادارة المهام اليومية يتيح اضافة تعديل و حذف مهام مع مزامنة البيانات بين الاجهزة المختلفة بشكل الي </div>
+
+            </div>
+            </div>
+        </div>
+    </section>    
+    <footer >
+        <p>الصفحة الشخصية لاسم المسجل&copy; 2026</p>
+    </footer>
+    
+</body>
+<script src="./js/slider.js"></script>
+</html>
