@@ -109,3 +109,8 @@
     margin-top: 5px;
     font-size: 0.9rem;
 }
+
+@media (max-width: 768px) {
+    #slider { height: 250px; }
+    #descriptionContainer { width: 90%; }
+}

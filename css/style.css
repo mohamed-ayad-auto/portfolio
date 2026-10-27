@@ -1,5 +1,9 @@
 /* الجزء الخاص بالخط */
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri'); 
+
+*, *::before, *::after { box-sizing: border-box; }
+img { max-width: 100%; }
+
 body{
     display: flex;
     flex-wrap:wrap ;
@@ -120,20 +124,23 @@ footer{
     text-align: center;
 }
 
-@media (max-width: 579px) {
-    #header{
-        justify-content: center;
-    }
-/* عشان  حجم الجهاز لاب او فون ااو تبلت */
-}
-@media (max-width: 669px) {
-    #newsletter{
-        justify-content: center;
-    }
-}
 @media (max-width: 1154px) {
-    #boxes{
-        flex-direction: column;
-        
-    }    
+    #boxes { flex-direction: column; }
 }
+
+@media (max-width: 768px) {
+    #header { padding: 10px 20px; justify-content: center; }
+    nav > ul { padding: 0; margin: 0; }
+
+    #showcase { padding: 0 20px; min-height: 300px; }
+    #showcase h1 { margin-top: 60px; font-size: 32px; }
+    #showcase p { font-size: 16px; }
+
+    #newsletter { padding: 15px 20px; justify-content: center; text-align: center; }
+    .newsletterForm { width: 100%; }
+    .newsletterForm input[type="email"] { flex: 1; width: auto; min-width: 0; }
+
+    #boxes { padding: 30px 20px; }
+    .box { flex: none !important; margin: 0 0 30px; }
+}
+
